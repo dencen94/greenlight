@@ -15,11 +15,11 @@
 
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content text-center">
+    <div class="modal-content text-center joeyfeatures">
       <div class="modal-body">
         <div class="card-body p-6">
           <div class="card-title">
-            <h3><%= t("login") %></h3>
+            <h3 class="joeycolor"><%= t("login") %></h3>
           </div>
           <% unless iconset_providers.length.zero? %>
             <% iconset_providers.each do |provider| %>
@@ -63,7 +63,7 @@
               </div>
             <% end %>
             <div class="form-footer">
-              <%= f.submit t("login"), class: "btn btn-outline-primary btn-block btn-pill" %>
+              <%= f.submit t("login"), class: "btn btn-outline-primary btn-block btn-pill joeybutton" %>
             </div>
           <% end %>
         </div>

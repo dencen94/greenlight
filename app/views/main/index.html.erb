@@ -25,11 +25,18 @@
   <div class="container pt-9 pb-8">
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank")).html_safe %></p>
-        <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
-          <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
+        <h1 id="main-text" class="display-4 mb-4 joeyfont"> <%= t("landing.welcome").html_safe %></h1>
+        <p class="lead offset-lg-2 col-lg-8 col-sm-12 joeyfont"><%= t("landing.about", href: link_to(t("greenlight"), "https://msoftdigital.com", target: "_blank")).html_safe %></p>
+        <%= link_to "https://msoftdigital.com", target: "_blank" do %>
+          <h4 class="joeylink"><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
         <% end %>
+	<span class="joeyfont"> Please download Mozila</span>
+        <br>
+        <a class="joeylink" href="https://www.mozilla.org/en-US/firefox/download/thanks/" target="_blank">for PC</a>
+         <br>
+        <a class="joeylink" href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" target="_blank">for Android</a>
+         <br>
+        <a class="joeylink" href="https://itunes.apple.com/us/app/firefox-web-browser/id989804926?mt=8" target="_blank">for IOS</a>
       </div>
 
     </div>

@@ -25,7 +25,7 @@
   <div class="container">
     <div class="row pt-9">
       <div class="col-lg-9 col-sm-12">
-        <div id="room-title" class="display-3 form-inline <%= 'edit_hover_class' if current_user.main_room != @room %>">
+        <div id="room-title" class="display-3 form-inline joeyfont <%= 'edit_hover_class' if current_user.main_room != @room %>">
           <h1 contenteditable=false id="user-text" class="display-3 text-left mb-3 font-weight-400"><%= @room.name %></h1>
           <% if current_user.main_room == @room %>
             <a class="disable-click"><i class="fas fa-home align-top home-indicator ml-2"></i></a>
@@ -33,7 +33,7 @@
             <a><i id="edit-room" class="fa fa-edit align-top home-indicator ml-2" data-edit-room="<%= @room.uid %>"></i></a>
           <% end %>
         </div>
-        <h4 class="text-left mb-6"><%= @room.sessions %> <%= t("room.sessions") %> | <%= @recordings.length %> <%= t("room.recordings") %></h4>
+        <h4 class="text-left mb-6 joeyfont"><%= @room.sessions %> <%= t("room.sessions") %> | <%= @recordings.length %> <%= t("room.recordings") %></h4>
         <label class="form-label"><%= t("room.invite_participants") %></label>
         <form class="form-inline">
           <div class="input-icon invite-link-input">
@@ -42,7 +42,7 @@
             </span>
             <input id="invite-url" type="text" class="form-control w-100" value="<%= request.base_url + @room.invite_path %>" readonly="">
           </div>
-          <div id="copy" class="btn btn-primary mx-2">
+          <div id="copy" class="btn joeyfeatures mx-2 joeyfont">
             <i class="fas fa-copy"></i>
             <%= t("copy") %>
           </div>
@@ -50,9 +50,9 @@
       </div>
       <div class="col-lg-3 col-sm-12 force-bottom mt-5">
         <% if @is_running %>
-          <%= button_to t("room.join"), room_path(@room), class: "btn btn-primary btn-block px-7 start-button float-right" %>
+          <%= button_to t("room.join"), room_path(@room), class: "btn joeyfeatures joeyfont btn-block px-7 start-button float-right" %>
         <% else %>
-          <%= button_to t("room.start"), start_room_path(@room), class: "btn btn-primary btn-block px-7 start-button float-right" %>
+          <%= button_to t("room.start"), start_room_path(@room), class: "btn joeyfeatures joeyfont btn-block px-7 start-button float-right" %>
         <% end %>
       </div>
     </div>

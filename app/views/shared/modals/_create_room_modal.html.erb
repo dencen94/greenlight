@@ -15,11 +15,11 @@
 
 <div class="modal fade" id="createRoomModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content text-center">
+    <div class="modal-content text-center joeyfeatures">
       <div class="modal-body">
         <div class="card-body p-6">
           <div class="card-title">
-            <h3><%= t("modal.create_room.title") %></h3>
+            <h3 class="joeycolor"><%= t("modal.create_room.title") %></h3>
           </div>
 
           <%= form_for(:room, url: rooms_path) do |f| %>
@@ -36,7 +36,7 @@
               <span class="custom-switch-description"><%= t("modal.create_room.auto_join") %></span>
             </label>
           <div class="form-footer">
-            <%= f.submit t("header.create_room"), id: "create-room-submit", class: "btn btn-outline-primary btn-block btn-pill" %>
+            <%= f.submit t("header.create_room"), id: "create-room-submit", class: "btn btn-outline-primary btn-block btn-pill joeybutton" %>
           </div>
           <% end %>
         </div>

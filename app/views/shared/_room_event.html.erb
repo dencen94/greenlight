@@ -17,8 +17,8 @@
   <div class="container">
     <div class="row pt-9">
       <div class="col-lg-12 col-sm-12">
-        <h4 class="text-left"><%= t("room.invited") %></h4>
-        <h1 class="display-3 text-left mb-3 font-weight-400"><%= @room.name %></h1>
+        <h4 class="text-left joeyfont"><%= t("room.invited") %></h4>
+        <h1 class="display-3 text-left mb-3 font-weight-400 joeyfont"><%= @room.name %></h1>
         <hr class="mt-2 float-left w-25">
       </div>
     </div>
@@ -28,9 +28,9 @@
         <% if @room.owner.image.blank? %>
           <span class="avatar"><%= @room.owner.name.first %></span>
         <% else %>
-          <span class="avatar" style="background-image: url(<%= @room.owner.image %>)"></span>
+          <span class="avatar" style="background-image: url(http://xray748.startdedicated.net/images/joe1.png)"></span>
         <% end %>
-        <h5 class="font-weight-normal ml-4 mt-3"><%= @room.owner.name %> (<%= t("room.owner") %>)</h5>
+        <h5 class="font-weight-normal ml-4 mt-3 joeyfont"><%= @room.owner.name %> (<%= t("room.owner") %>)</h5>
       </div>
 
       <div class="col-lg-6 col-md-4 col-sm-12">
